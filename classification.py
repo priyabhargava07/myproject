@@ -215,8 +215,7 @@ print('\nTest accuracy:', test_acc)
 # In[18]:
 
 
-#probability_model = tf.keras.Sequential([model, 
-                                         tf.keras.layers.Softmax()])
+#probability_model = tf.keras.Sequential([model, tf.keras.layers.Softmax()])
 
 
 # In[19]:
