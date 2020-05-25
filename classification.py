@@ -215,14 +215,14 @@ print('\nTest accuracy:', test_acc)
 # In[18]:
 
 
-probability_model = tf.keras.Sequential([model, 
+#probability_model = tf.keras.Sequential([model, 
                                          tf.keras.layers.Softmax()])
 
 
 # In[19]:
 
 
-predictions = probability_model.predict(test_images)
+#predictions = probability_model.predict(test_images)
 
 
 # Here, the model has predicted the label for each image in the testing set. Let's take a look at the first prediction:
@@ -230,7 +230,7 @@ predictions = probability_model.predict(test_images)
 # In[20]:
 
 
-predictions[0]
+#predictions[0]
 
 
 # A prediction is an array of 10 numbers. They represent the model's "confidence" that the image corresponds to each of the 10 different articles of clothing. You can see which label has the highest confidence value:
@@ -238,7 +238,7 @@ predictions[0]
 # In[21]:
 
 
-np.argmax(predictions[0])
+#np.argmax(predictions[0])
 
 
 
@@ -247,7 +247,7 @@ np.argmax(predictions[0])
 # In[32]:
 
 
-model.save('mymodel.h5')
+#model.save('mymodel.h5')
 
 
 
